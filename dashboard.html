@@ -19,6 +19,39 @@
         </div>
     </header>
 
+    <!--Contenido principal-->
+    <main class="container my-4">
+        <!--Subtítulo-->
+        <h2>Mis Tareas</h2>
 
+        <!--Botón para agregar una nueva tarea-->
+        <a href="add-task.html" class="btn btn-success mb-3">➕ Nueva Tarea</a>
+
+        <!--Lista de tareas-->
+        <ul class="list-group" id="taskList">
+            <!--ejemplo de tarea #1-->
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Estudiar HTML
+                <div>
+                    <!--Botón de completar accesible con aria-label-->
+                    <button class="btn btn-sm btn-success" aria-label="Marcar tarea 'Estudiar HTML' como completada">✔️</button>
+
+                    <!--Botón eliminar-->
+                    <button class="btn btn-sm btn-danger" aria-label="Eliminar tarea 'Estudiar HTML'">🗑️</button>
+                </div>
+            </li>
+
+            <!--Ejemplo de tarea 2-->
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Hacer ejercicio
+                <div>
+                    <button class="btn btn-sm btn-success" aria-label="Marcar tarea 'Hacer ejercicio' como completada">✔️</button>
+                    <button class="btn btn-sm btn-danger" aria-label="Eliminar tarea 'Hacer ejercicio'">🗑️</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    
 </body>
 </html>
