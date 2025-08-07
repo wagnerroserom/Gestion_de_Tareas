@@ -12,8 +12,52 @@
     <!--Encabezado-->
     <header class="bg-primary text-white p-3">
         <div class="container">
-            
+            <!--Botón de cambio de tema-->
+            <button id="toggleTheme" class="btn btn-light btn-sm mt-2">Modo Oscuro</button>
         </div>
     </header>
+
+    <!--Contenido principal-->
+    <main class="container my-4">
+        <!--Formulario para registro de tarea-->
+        <form id="taskForm" action="dashboard.html">
+            <!--Título-->
+            <div class="mb-3">
+                <label for="title" class="form-label">Título de la tarea</label>
+                <input 
+                type="text"
+                class="form-control"
+                id="title"
+                required
+                aria-required="true"
+                placeholder="Ej: Preparar presentación"
+                >
+            </div>
+
+            <!--Descripción-->
+            <div class="mb-3">
+                <label for="description" class="form-label">Descripción</label>
+                <textarea 
+                class="form-control"
+                id="description"
+                rows="3"
+                placeholder="Agrega detalles adicionales que necesites"
+                ></textarea>
+            </div>
+
+            <!--Prioridad-->
+            <div class="mb-3">
+                <label for="priority" class="form-label">Prioridad</label>
+                <select class="form-select" id="priority" required>
+                    <option value="">Selecciona una opción por favor...</option>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+            </div>
+
+            
+        </form>
+    </main>
 </body>
 </html>
