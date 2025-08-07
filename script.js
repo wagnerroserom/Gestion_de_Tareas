@@ -27,6 +27,18 @@ document.addEventListener("DOMContentLoaded", function () {
             const contrasena = document.getElementById("contrasena").value.trim();
             const errorDiv = document.getElementById("errorLogin");
 
-            
-        })
+            // Para limpiar el mensaje anterior
+            errorDiv.textContent = "";
+
+            //Validamos campos
+            if (!usuario) {
+                e.preventDefault();
+                errorDiv.textContent = "Atención: El usuario es obligatorio.";
+            } else if (!contrasena) {
+                e.preventDefault();
+                errorDiv.textContent = "Atención: La contraseña es obligatoria";
+            }
+        });
     }
+
+    
