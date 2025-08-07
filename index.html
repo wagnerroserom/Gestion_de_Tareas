@@ -25,12 +25,37 @@
                     id="usuario"
                     required
                     aria-required="true"
-                    placeholder="Ingresa tu usuario"
+                    placeholder="Ingresa tu usuario por favor"
                     >
                 </div>
-                
+
+                <!--Campo para contraseña-->
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label">contraseña</label>
+                    <input
+                    type="password"
+                    class="form-control"
+                    id="contrasena"
+                    required
+                    aria-required="true"
+                    placeholder="Ingresa tu contraseña por favor"
+                    >
+                </div>
+
+                <!--Mensaje visible para cuando haya error-->
+                <div id="errorLogin" class="text-danger mb-3" role="alert" aria-live="assertive"></div>
+
+                <!--Botón de envío-->
+                <button type="submit" class="btn btn-primary w-100">Ingresar</button>
             </form>
+
+            <!--Ennlace a registro-->
+            <p class="text-center mt-3">
+                <a href="add-task.html">¿No tienes cuenta? Regístrate</a>
+            </p>
         </div>
     </div>
+
+    
 </body>
 </html>
