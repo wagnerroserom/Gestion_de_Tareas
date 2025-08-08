@@ -32,8 +32,8 @@ body.dark-mode .text-muted {
 button:focus,
 input:focus,
 a:focus,
-selection:focus {
-    outline: 3px solid#0062cc;
+selec:focus {
+    outline: 3px solid #0062cc;
     outline-offset: 2px;
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
 }
@@ -43,6 +43,6 @@ selection:focus {
 }
 
 .container {
-    margin-top: 21px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
